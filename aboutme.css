@@ -60,7 +60,7 @@ p {
 	font-family: "Trebuchet MS", Helvetica, sans-serif
 }
 
-div {
+.keyboard_para {
 	font-style: italic;
 }
 
@@ -77,10 +77,10 @@ a:link {
 }
 
 a:visited {
-	color: #ffff66;
+	color: #1a0033;
 }
 
-a:hover {
+header:hover {
 	font-size: 40px;
 }
 
@@ -90,4 +90,65 @@ a:active {
 
 p::first-letter {
 	text-transform: lowercase;
+}
+
+.navbar {
+	overflow: hidden;
+}
+
+.navbar a {
+ 	float: left;
+ 	font-size: 16px;
+  	color: #0000ff;
+	text-align: center;
+	padding: 10px 16px;
+	text-decoration: none;
+	background-color: #ffffff;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: #0000ff;
+}
+
+.dropdown {
+	background-color: #ffffff;
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown .dropdown_button {
+	font-size: 16px;  
+	padding: 10px 12px;
+	background-color: #ffffff;
+	font-family: inherit;
+	margin: 0;
+	color: #0000ff;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #0000ff;
+	border-radius: 10px;
+}
+
+.navbar a:hover, .dropdown:hover .dropdown_button {
+ 	background-color: #0000ff;
+ 	color: #ffffff;
+}
+
+.dropdown_content {
+	display: none;
+	position: absolute;
+	background-color: #ffffff;
+	z-index: 1;
+	box-shadow: 0px 8px 16px 0px #1a1a1a;
+}
+
+.dropdown:hover .dropdown_content {
+ 	display: block;
+}
+
+.dropdown_content a {
+	text-decoration: none;
+	float: none;
+	padding: 10px 12px;
+	display: block;
 }

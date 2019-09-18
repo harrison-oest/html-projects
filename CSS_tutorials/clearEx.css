@@ -1,0 +1,29 @@
+#turtle_left {
+	float: left;
+	border-style: inset;
+	border-color: #0a23c7;
+	border-width: 2px;
+	margin: 2px;
+}
+
+.div3 {
+	background-color: #d0ff00;
+	height: 100px;
+}
+
+#cat_right {
+	float: right;
+	border-style: inset;
+	border-color: #0a23c7;
+	border-width: 2px;
+	margin: 5px;
+}
+
+.div4 {
+	background-color: #8c00bf;
+	height: 120px;
+}
+
+.clear-it {
+	clear: both;
+}
