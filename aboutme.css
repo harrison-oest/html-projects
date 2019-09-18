@@ -1,0 +1,93 @@
+body {
+	background-image: url("images/paper.jfif");
+}
+
+table, th, td {
+	text-align: center;
+	border-collapse: collapse;
+}
+
+table {
+	margin: 10px;
+}
+
+caption {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#family th, td{
+	border: 1px solid black;
+}
+
+#family th {
+	background-color: #170D52;
+	color: #FFFFFF;
+}
+
+#family tr:nth-of-type(even) {
+	background-color: #737373;
+}
+
+#family tr:nth-of-type(odd) {
+	background-color: #FFFFFF;
+}
+
+#bbq td {
+	border-style: dashed;
+}
+
+#bbq th {
+	background-color: #DCFF00;
+}
+
+#bbq tbody tr:last-of-type > td {
+	border-bottom: none;
+}
+
+#keyboards {
+	font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+#keyboards th {
+	background-color: #FF7800;
+}
+
+#keyboards tfoot {
+	background-color: #FF003A;
+}
+
+p {
+	font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+
+div {
+	font-style: italic;
+}
+
+h2.kc_bbq {
+	color: #b30000;
+}
+
+#skills {
+	color: #668cff;
+}
+
+a:link {
+	text-transform: uppercase;
+}
+
+a:visited {
+	color: #ffff66;
+}
+
+a:hover {
+	font-size: 40px;
+}
+
+a:active {
+	background-color: #ffff66;
+}
+
+p::first-letter {
+	text-transform: lowercase;
+}
