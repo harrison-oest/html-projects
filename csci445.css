@@ -2,94 +2,38 @@ body {
 	background-image: url("images/paper.jfif");
 }
 
-table, th, td {
+footer {
+	background-color: #404040;
+	padding: 10px;
 	text-align: center;
-	border-collapse: collapse;
+	font-size: 20px;
+	color: #ffffff;
+	position: absolute;
+	height: 60px;
+	width: 100%;
+	bottom: 0;
 }
 
-table {
-	margin: 10px;
-}
-
-caption {
-	font-size: 25px;
-	font-weight: bold;
-}
-
-#family th, td{
-	border: 1px solid black;
-}
-
-#family th {
-	background-color: #170D52;
-	color: #FFFFFF;
-}
-
-#family tr:nth-of-type(even) {
-	background-color: #737373;
-}
-
-#family tr:nth-of-type(odd) {
-	background-color: #FFFFFF;
-}
-
-#bbq td {
-	border-style: dashed;
-}
-
-#bbq th {
-	background-color: #DCFF00;
-}
-
-#bbq tbody tr:last-of-type > td {
-	border-bottom: none;
-}
-
-#keyboards {
-	font-family: "Trebuchet MS", Helvetica, sans-serif
-}
-#keyboards th {
-	background-color: #FF7800;
-}
-
-#keyboards tfoot {
-	background-color: #FF003A;
+h1 {
+	text-align: center;
+	font-stretch: 
 }
 
 p {
-	font-family: "Trebuchet MS", Helvetica, sans-serif
+	text-align: center;
+	font-variant: small-caps;
 }
 
-.keyboard_para {
-	font-style: italic;
+#quiet_text {
+	opacity: 0.25;
 }
 
-h2.kc_bbq {
-	color: #b30000;
+#title {
+	text-align: center;
 }
 
-#skills {
-	color: #668cff;
-}
-
-a:link {
-	text-transform: uppercase;
-}
-
-a:visited {
-	color: #1a0033;
-}
-
-header:hover {
+#title:hover {
 	font-size: 40px;
-}
-
-a:active {
-	background-color: #ffff66;
-}
-
-p::first-letter {
-	text-transform: lowercase;
 }
 
 .navbar {
@@ -151,4 +95,10 @@ p::first-letter {
 	float: none;
 	padding: 10px 12px;
 	display: block;
+}
+
+.navbar a.active {
+	background-color: #ffff00;
+	border-color: #ff0000;
+	color: #ff0000;
 }

@@ -8,3 +8,7 @@ The CSS3 properties used to stlye the navbar are as follows:
 -> padding : allows the space between elements to be adjusted 
 -> text-align : allows text to be left, centered, right, etc aligned within the element
 -> z-index : sets the priority of an element so it can be forced above or behind another element
+
+CSS3 Features Used:
+-> opacity : adjusts the visibility of an element to allow be more transparent
+-> font-variant : allows for the font to be either none or "small-caps", like I've done

@@ -4,17 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="Harrison Oest" />
 	<meta name="description" content="This page is all about my life." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>All About Harrison Oest</title>
 <link rel="stylesheet" type="text/css" href="aboutme.css"/>
 </head>
 <body style="background-color: #a8d1f7">
 <header>
-	<h1>Harrison Oest's Personal Page</h1>
+	<h1 id="title">Harrison Oest's Personal Page</h1>
 </header>
 <nav>
 	<div class="navbar">
-		<a href='index.html'>Home</a>
-		<a href='aboutme.html'>About Me</a>
+		<a href='../index.html'>Home</a>
+		<a class="active">About Me</a>
 		<div class='dropdown'>
 			<button class='dropdown_button'>CSS Tutorials
 				<i class="fa fa-caret-down"></i>
@@ -31,8 +32,8 @@
 	<h3>Contact Info</h3>
 <hr>
 		<h4>
-		Email me at: <a href="mailto:harrisonoest@mymail.mines.edu">harrisonoest@mymail.mines.edu</a>.<br>
-		Connect with me on LinkedIn: <a href=https://www.linkedin.com/in/harrisonoest>LinkedIn</a>
+		Email me at: <a id="email" href="mailto:harrisonoest@mymail.mines.edu">harrisonoest@mymail.mines.edu</a>.<br>
+		Connect with me on LinkedIn: <a id="linkedin" href=https://www.linkedin.com/in/harrisonoest>LinkedIn</a>
 		</h4>
 <hr>
 	<h3>Jump to my <a href="#hobbies">Hobbies</a>!</h3>
@@ -88,7 +89,7 @@
 
 	<br>
 
-	<img src="images/OestFamily.jpeg" alt="Oest Family" style="width:300px;height:400px;">
+	<img src="../images/OestFamily.jpeg" alt="Oest Family" style="width:300px;height:400px;">
 <hr>
 	<h2 class="kc_bbq">Best KC BBQ Places</h2>
 	<table id="bbq">
@@ -198,17 +199,17 @@
 		
 		<br>
 
-		<img src="images/ErgoDox.jpeg" alt="ErgoDox Keyboard" style="width:800px;height:400px;">
+		<img src="../images/ErgoDox.jpeg" alt="ErgoDox Keyboard" style="width:800px;height:400px;">
 <hr>
 		<h4>Tada68</h4>
 		<p>This is a board that I built myself. I take it to work every day at my internship. This is called a 65% board, since it has 60% of the keys of a normal board, plus another 5% that includes the arrow keys and a few other keys. It has Gateron Yellow switches. I took each switch apart and put a special lubricant in to make the switches slide smoothly. The keycaps themselves are a set called SA Pulse. I also have a custom USB cable that I had someone make for me; it matches the keycap set.</p>
 
 		<br>
 
-		<img src="images/Tada68.jpg" alt="Tada68 Keyboard" style="width:800px;height:400px">
+		<img src="../images/Tada68.jpg" alt="Tada68 Keyboard" style="width:800px;height:400px">
 
 <h1 id="skills">Skills</h1>
-<p>Some of the career-pertinent skills I've acquired over the years are listed below:</p>
+	<p>Some of the career-pertinent skills I've acquired over the years are listed below:</p>
 <hr>
 	<h3>Programming Languages</h3>
 		<ul>
@@ -237,4 +238,7 @@
     </a>
 </p>
 </body>
+<footer>
+	<p>&#169; Copyright 2019 Harrison Oest</p>
+</footer>
 </html>
