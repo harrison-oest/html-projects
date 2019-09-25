@@ -90,4 +90,17 @@ function getPosition(event)
   }
 }
 
+function toggleMode() {
+	var darkBtn = document.getElementById("dark_mode");
+	if(darkBtn.innerHTML=="Dark Mode"){
+		darkBtn.innerHTML="Light Mode";
+		document.body.style.backgroundImage = "url('../images/blackpaper.jpg')";
+		document.getElementById("title").style.color = "white";
+	} else {
+		darkBtn.innerHTML="Dark Mode";
+		document.body.style.backgroundImage = "url('../images/paper.jfif')";
+		document.getElementById("title").style.color = "black";
+	}
+}
+
 drawSmileyFace();
