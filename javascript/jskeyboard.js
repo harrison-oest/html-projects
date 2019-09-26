@@ -1,43 +1,45 @@
-var canvas = document.getElementById("canvas")
-canvas.setAttribute('tabindex', '0');
-canvas.focus();
-canvas.addEventListener("keypress",keyDown,true);
-ctx = canvas.getContext("2d");
-var x = 10;
-var y = 10;
+var x = 0;
+var y = 0;
 var width = 80;
 var height = 40;
-var img = new Image();
-img.onload = function() {
-	ctx.drawImage(img, x, y, width, height);
-}
-img.src = "../images/gtr.png";
 
-function moveImage(x, y) {
-    ctx.drawImage(img, x, y, width, height);
+window.onload = function() {
+    var img = new Image();
+    img.src = "../images/gtr.png";
+    moveImage();
+
+    window.addEventListener("keydown",keyDown,false);
+};
+
+
+function moveImage() {
+    var canvas = document.getElementById("canvas")
+    ctx = canvas.getContext("2d");
+
+    var img = new Image();
+    img.src = "../images/gtr.png";
+
+    ctx.clearRect(0,0,400,400);
+    
+    img.addEventListener("load", function() {
+        ctx.drawImage(img, x, y, width, height);
+    }, false);
 }
 
 function keyDown(e) {
     var keyPress = e.keyCode;
   
-    if(keyPress === 39 && x<=400){ 
+    if(keyPress == 39 && x<=(400-height)){ 
         x = x+20;
-        ctx.clearRect(0,0,400,400);
-  		moveImage(x,y);
     }
-    else if(keyPress === 37 && x>=10){
+    else if(keyPress == 37 && x>=80){
         x = x-20;
-        ctx.clearRect(0,0,400,400);
-  		moveImage(x,y);
     }
-    else if(keyPress === 38 && y>=10) {
+    else if(keyPress == 38 && y>=40) {
         y = y-20;
-        ctx.clearRect(0,0,400,400);
-  		moveImage(x,y);
     }
-    else if(keyPress === 40 && y<=400){
+    else if(keyPress == 40 && y<=(400-width)) {
         y = y+20;
-        ctx.clearRect(0,0,400,400);
-  		moveImage(x,y);
     }
+    moveImage();
 }
