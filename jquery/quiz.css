@@ -1,0 +1,106 @@
+:root {
+    --header_color: #000000;
+    --background_color: #8c9dad;
+    --border_color: #4d587a;
+    --text_background: #40739d;
+    --button_color: #4d6695;
+    --button_background: #ffffff;
+    --text_color: #385d8d;
+    --question_height: 600px;
+    --attempt_height: 605px;
+}
+
+aside, .questions {
+	float: left;
+	display: block;
+	margin-top: 10px;
+}
+
+aside {
+	width: 20%;
+	float: left;
+	height: var(--attempt_height);
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 5px;
+	border-color: var(--border_color);
+	box-sizing: border-box;
+	background-color: var(--background_color);
+}
+
+aside>h2 {
+    top: -5px;
+    position: relative;
+}
+
+aside ul li {
+    display: none;
+}
+
+h2 {
+	text-align: center;
+}
+
+.questions {
+    width: 75%;
+    height: var(--question_height);
+    background-color: var(--background_color);
+    border-style: solid;
+    border-color: var(--border_color);
+    border-width: 3px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.questions > h3 {
+    text-align: center;
+    padding: 5px;
+    background-color: var(--text_background);
+    color: var(--header_color);
+}
+
+.car_buttons ul {
+    list-style-type: none;
+    overflow: hidden;
+   	display: flex;
+	justify-content: center;
+}
+
+li {
+    display: inline;
+}
+
+.car_buttons li button{
+    color: var(--border_color);
+    border-style: solid;
+    border-color: var(--border_color);
+    background-color: var(--button_background);
+    border-radius: 5px;
+    text-align: center;
+    padding: 16px 20px;
+    margin: 5px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+#check_answer {
+	color: var(--border_color);
+	padding: 5px;
+	font-size: 16px;
+	margin: 10px;
+}
+
+.questions > .question_box, .questions > .answer_box {
+    text-align: center;
+    font-size: 20px;
+    background-color: var(--button_background);
+    width: 90%;
+    color: var(--border_color);
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--border_color);
+    height: 80px;
+}
