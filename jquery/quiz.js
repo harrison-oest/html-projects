@@ -3,11 +3,6 @@ function game_over() {
 	$("#game_over").css('display','block');
 }
 
-function reset() {
-	$("#box").animate({width: "100%"}).delay(3000);
-	location.reload();
-}
-
 $(document).ready(function() {
 	var current_question_bool = false;
 	var current_car = "";

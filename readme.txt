@@ -12,3 +12,7 @@ The CSS3 properties used to stlye the navbar are as follows:
 CSS3 Features Used:
 -> opacity : adjusts the visibility of an element to allow be more transparent
 -> font-variant : allows for the font to be either none or "small-caps", like I've done
+
+JQuery Extra Credit:
+-> For the interesting visual effect, I added a moving image into the box instead of just animating text
+-> I also added the functionality to double-click the "Guesses" box to use the "location.reload()" function call to refresh the page so the user can play again
