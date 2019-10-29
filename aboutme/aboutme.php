@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype php>
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
@@ -6,39 +6,15 @@
 	<meta name="description" content="This page is all about my life." />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>All About Harrison Oest</title>
+<link rel="stylesheet" type="text/css" href="../csci445.css"/>
 <link rel="stylesheet" type="text/css" href="aboutme.css"/>
 </head>
+
+<?php $pageName = "aboutme"; ?>
+<?php $currentPath = "aboutme/"; ?>
+
 <body style="background-color: #a8d1f7">
-<header>
-	<h1 id="title">Harrison Oest's Personal Page</h1>
-</header>
-<nav>
-	<div class="navbar">
-		<a href='../index.html'>Home</a>
-		<a class="active">About Me</a>
-		<div class='dropdown'>
-			<button class='dropdown_button'>CSS Tutorials
-				<i class="fa fa-caret-down"></i>
-			</button>
-			<div class='dropdown_content'>
-					<a href='../CSS_tutorials/turtlecoders.html'>Turtle Coders</a>
-					<a href='../CSS_tutorials/posEx.html'>Position Example</a>
-					<a href='../CSS_tutorials/floatExBoxes.html'>The Box Model</a>
-					<a href='../CSS_tutorials/clearEx.html'>Float and Clear</a>
-			</div>
-		</div>
-		<div class='dropdown'>
-			<button class='dropdown_button'>Javascript Tutorials
-				<i class="fa fa-caret-down"></i>
-			</button>
-			<div class='dropdown_content'>
-				<a href='../javascript/jsmouse.html'>Smiley Mouse</a>
-				<a href='../javascript/jskeyboard.html'>Keyboard Driver</a>
-			</div>
-		</div>
-		<a href="../jquery/quiz.html">jQuery Quiz</a>
-	</div>
-</nav>
+	<?php include "../templateHeader.php";?>
 	<h3>Contact Info</h3>
 <hr>
 		<h4>
@@ -240,13 +216,8 @@
 			<code>str = "The rain in Spain" <br>
 			x = re.search(r"\bS\w+", str) <br>
 			print(x.group())</code>
+	<footer id="foot">
+		<?php include "../templateFooter.php"; ?>
+	</footer>
 </body>
-<footer>
-	<div class="validationBadges">
-            <img src="../images/html5.png" alt="html5 validation badge" style="width:50px;height:100%">
-            <img src="../images/css.png" alt="css validation badge" style="width:50px;height:100%">
-            <img src="../images/wcag2A.png" alt="wcag2A validation badge" style="width:50px;height:100%">
-    </div>
-	<p>&#169; Copyright 2019 Harrison Oest</p>
-</footer>
 </html>

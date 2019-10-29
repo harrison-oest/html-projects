@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype php>
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
@@ -11,38 +11,12 @@
   	<script type="text/javascript" src="quiz.js"></script>
 	<title>All About Harrison Oest</title>
 </head>
-<body style="background-color: #8c9dad">
-<header>
-	<h1 id="title">Car Quiz</h1>
-</header>
-<nav>
-	<div class="navbar">
-		<a href='../index.html'>Home</a>
-		<a href='../aboutme/aboutme.html'>About Me</a>
-		<div class='dropdown'>
-			<button class='dropdown_button'>CSS Tutorials
-				<i class="fa fa-caret-down"></i>
-			</button>
-			<div class='dropdown_content'>
-					<a href='../CSS_tutorials/turtlecoders.html'>Turtle Coders</a>
-					<a href='../CSS_tutorials/posEx.html'>Position Example</a>
-					<a href='../CSS_tutorials/floatExBoxes.html'>The Box Model</a>
-					<a href='../CSS_tutorials/clearEx.html'>Float and Clear</a>
-			</div>
-		</div>
-		<div class='dropdown'>
-			<button class='dropdown_button'>Javascript Tutorials
-				<i class="fa fa-caret-down"></i>
-			</button>
-			<div class='dropdown_content'>
-				<a href='../javascript/jsmouse.html'>Smiley Mouse</a>
-				<a href='../javascript/jskeyboard.html'>Keyboard Driver</a>
-			</div>
-		</div>
-		<a class="active">jQuery Quiz</a>
-	</div>
-</nav>
 
+<?php $pageName = "quiz"; ?>
+<?php $currentPath = "jquery/"; ?>
+
+<body style="background-color: #8c9dad">
+<?php include "../templateHeader.php"; ?>
 <div id="quiz_div">
 	<aside>
 		<h2>Guessed:</h2>
@@ -84,13 +58,6 @@
 	<p id="surprise">(Double click for a surprise &#128521;)</p><br>
 	<p id="reset">Or double-click the Guessed box to reload the page and play again!</p>
 </div>
-<footer>
-	<div class="validationBadges">
-            <img src="../images/html5.png" alt="html5 validation badge" style="width:50px;height:100%">
-            <img src="../images/css.png" alt="css validation badge" style="width:50px;height:100%">
-            <img src="../images/wcag2A.png" alt="wcag2A validation badge" style="width:50px;height:100%">
-    </div>
-	<p>&#169; Copyright 2019 Harrison Oest</p>
-</footer>
+<?php include "../templateFooter.php"; ?>
 </body>
 </html>
