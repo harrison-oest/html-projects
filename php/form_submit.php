@@ -1,4 +1,4 @@
-<!doctype php>
+<!doctype html>
 <head>
 	<meta charset="UTF-8">
 	<meta name="author" content="Harrison Oest" /> 
@@ -34,22 +34,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 // Check what type of keycap is selected
-if ($_POST["keycap_select"] == "zen_pond") {
+if ($_POST["keycap_select"] == "../images/zenpond.jpg") {
     $keycap_name = "Zen Pond II";
     $keycap_price = 45;
-    $image = "../images/zenpond.jpg";
-} else if ($_POST["keycap_select"] == "sneaker") {
+} else if ($_POST["keycap_select"] == "../images/summersneaker.jpg") {
     $keycap_name = "Summer Sneaker";
     $keycap_price = 50;
-    $image = "../images/summersneaker.jpg";
-} else if ($_POST["keycap_select"] == "cosmos") {
+} else if ($_POST["keycap_select"] == "../images/cosmos.jpg") {
     $keycap_name = "Cosmos Series";
     $keycap_price = 60;
-    $image = "../images/cosmos.jpg";
-} else if ($_POST["keycap_select"] == "corral") {
-    $keycap_name = "Atlantis Corral";
+} else if ($_POST["keycap_select"] == "../images/atlantis.jpg") {
+    $keycap_name = "Atlantis Coral";
     $keycap_price = 50;
-    $image = "../images/atlantis.jpg";
 }
 
 $quantity = $_POST["quantity"];
@@ -64,6 +60,11 @@ if ($_POST["donation"] == "yes") {
 } else {
     $grand_total = $subtotal + $tax;
 }
+
+$order_file = fopen("orders.csv", "a");
+$order_info = $first_name." ".$last_name.",".$submit_time.",".$keycap_name.",".$quantity.",".$grand_total."\n";
+fwrite($order_file, $order_info);
+fclose($order_file);
 
 ?>
 
@@ -97,7 +98,5 @@ if ($_POST["donation"] == "yes") {
                 ?>
             </p>
     </div>
-    <footer id="foot">
-		<?php include "../templateFooter.php"; ?>
-	</footer>
+    <?php include "../templateFooter.php"; ?>
 </body>

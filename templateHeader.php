@@ -1,6 +1,3 @@
-<!doctype php>
-<html lang="en-US">
-
 <?php
 	if (isset($pageName) && isset($currentPath)) {
 ?>
@@ -10,21 +7,21 @@
 </header>
 <nav>
 	<div class="navbar">
-		<ul>
-			<?php if($pageName == "index" && $currentPath == "") { ?>
-				<a id="active" href="index.php">Home</a>
+
+			<?php if($pageName == "index") { ?>
+				<a class="active" href="index.php">Home</a>
 			<?php } else { ?>
 				<a href="../index.php">Home</a>
 			<?php } ?>
 
-			<?php if($pageName == "aboutme" && $currentPath == "") { ?>
-				<a id="active" href="aboutme/aboutme.php">About Me</a>
+			<?php if($pageName == "aboutme") { ?>
+				<a class="active" href="aboutme/aboutme.php">About Me</a>
 			<?php } else { ?>
 				<a href="../aboutme/aboutme.php">About Me</a>
 			<?php } ?>
 
-			<?php if($pageName == "quiz" && $currentPath == "") { ?>
-				<a id="active" href="jquery/quiz.php">jQuery Quiz</a>
+			<?php if($pageName == "quiz") { ?>
+				<a class="active" href="jquery/quiz.php">jQuery Quiz</a>
 			<?php } else { ?>
 				<a href="../jquery/quiz.php">jQuery Quiz</a>
 			<?php } ?>
@@ -34,14 +31,14 @@
 					<i class="fa fa-caret-down"></i>
 				</button>
 				<div class='dropdown_content'>
-					<?php if($pageName == "jskeyboard" && $currentPath == "") { ?>
-						<a id="active" href="javascript/jskeyboard.php">Keyboard Driver</a>
+					<?php if($pageName == "jskeyboard") { ?>
+						<a class="active" href="javascript/jskeyboard.php">Keyboard Driver</a>
 					<?php } else { ?>
-						<a id="active" href="../javascript/jskeyboard.php">Keyboard Driver</a>
+						<a href="../javascript/jskeyboard.php">Keyboard Driver</a>
 					<?php } ?>
 
-					<?php if($pageName == "jsmouse" && $currentPath == "") { ?>
-						<a id="active" href="javascript/jsmouse.php">Smiley Mouse</a>
+					<?php if($pageName == "jsmouse") { ?>
+						<a class="active" href="javascript/jsmouse.php">Smiley Mouse</a>
 					<?php } else { ?>
 						<a href="../javascript/jsmouse.php">Smiley Mouse</a>
 					<?php }} ?>
@@ -63,7 +60,21 @@
 				<i class="fa fa-caret-down"></i>                                      
 			</button>
 			<div class='dropdown_content'>
+				<?php if($pageName == "form") { ?>
+					<a class="active" href='../php/form.php'>Form</a>
+				<?php } else { ?>
 					<a href='../php/form.php'>Form</a>
+				<?php } ?>
+				<?php if($pageName == "io") { ?>
+					<a class="active" href='../php/io.php'>File I/O</a>
+				<?php } else { ?>
+					<a href='../php/io.php'>File I/O</a>
+				<?php } ?>
+				<?php if($pageName == "vieworders") { ?>
+					<a class="active" href='../php/vieworders.php'>View Orders</a>
+				<?php } else { ?>
+					<a href='../php/vieworders.php'>View Orders</a>
+				<?php } ?>
 			</div>
 		</div>
 	</div>

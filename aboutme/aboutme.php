@@ -1,13 +1,13 @@
-<!doctype php>
+<!doctype html>
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
 	<meta name="author" content="Harrison Oest" />
 	<meta name="description" content="This page is all about my life." />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>All About Harrison Oest</title>
-<link rel="stylesheet" type="text/css" href="../csci445.css"/>
-<link rel="stylesheet" type="text/css" href="aboutme.css"/>
+	<title>All About Harrison Oest</title>
+	<link rel="stylesheet" type="text/css" href="../csci445.css"/>
+	<link rel="stylesheet" type="text/css" href="aboutme.css"/>
 </head>
 
 <?php $pageName = "aboutme"; ?>
@@ -216,8 +216,6 @@
 			<code>str = "The rain in Spain" <br>
 			x = re.search(r"\bS\w+", str) <br>
 			print(x.group())</code>
-	<footer id="foot">
-		<?php include "../templateFooter.php"; ?>
-	</footer>
+	<?php include "../templateFooter.php"; ?>
 </body>
 </html>
